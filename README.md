@@ -15,7 +15,7 @@ This repository hosts the **downloads only**. By installing, you agree to the be
 
 ## Download
 
-Get the latest **`Prompt to Page_<version>_aarch64.dmg`** from the releases page:
+Get the latest **`Prompt-to-Page_<version>_aarch64.dmg`** from the releases page:
 
 ### → **[Download the latest release](https://github.com/digitalcourtney87/prompt-to-page/releases/latest)**
 
