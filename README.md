@@ -6,6 +6,10 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
+## What's new in 0.2.5
+
+**0.2.5 fixes a startup crash** present in earlier builds, where the app could close immediately on launch. If an earlier version wouldn't open for you, download 0.2.5 below — it resolves the issue. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+
 ## Requirements
 
 ### macOS
@@ -54,6 +58,8 @@ Get the latest build for your platform from the releases page:
 3. Finish the installer, then launch **Prompt to Page** from the Start menu.
 
 > On first launch the app runs a one-time setup that downloads a local AI model. Your prompts, pages, and the model never leave your device.
+
+**Need more detail or hit a problem?** See the full [Windows install & troubleshooting guide](install-windows.md).
 
 ## Updating
 
