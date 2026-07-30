@@ -6,9 +6,9 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.2.5
+## What's new in 0.3.0
 
-**0.2.5 fixes a startup crash** present in earlier builds, where the app could close immediately on launch. If an earlier version wouldn't open for you, download 0.2.5 below — it resolves the issue. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+**0.3.0 is the measured-quality release.** The model picker now shows measured quality for each design system a model has been evaluated on, NHS.UK is fully quality-evaluated, eight models respond faster with no measured quality loss, generation issues are surfaced in a per-page quality report, and you can edit the generated HTML directly. Also: **macOS builds are now signed and notarized by Apple — the first-launch Terminal step is gone.** See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
@@ -40,16 +40,9 @@ Get the latest build for your platform from the releases page:
 ### macOS
 
 1. Open the downloaded `.dmg` and drag **Prompt to Page** into your **Applications** folder.
-2. This beta is **not yet Apple-notarized**, so macOS will block the first launch with a message like *"Apple could not verify…"* or *"…is damaged."* This is expected.
-3. Open **Terminal** (`⌘ Space`, type "Terminal", Return), paste this once, and press Return:
+2. Open **Prompt to Page** from Applications. The app is signed and notarized by Apple, so it opens without warnings — no Terminal commands needed.
 
-   ```bash
-   xattr -dr com.apple.quarantine "/Applications/Prompt to Page.app"
-   ```
-
-4. Open **Prompt to Page** from Applications as normal. You only do this once per install.
-
-> **Why the Terminal step?** The app bundles a local AI engine that runs as a helper process; the usual right-click → Open only clears the warning for the main app, not the helper. The command simply removes the "downloaded from the internet" quarantine flag. Your prompts, pages, and the model never leave your device.
+> **Upgrading from an older beta?** Releases before notarization (0.2.4 and earlier) needed a one-time Terminal command to clear the download quarantine. That step is no longer required — just replace the app in Applications with the new download. Your prompts, pages, and the model still never leave your device.
 
 ### Windows
 
@@ -63,7 +56,7 @@ Get the latest build for your platform from the releases page:
 
 ## Updating
 
-- **macOS:** download the new `.dmg`, drag it into Applications to replace the old version, and run the Terminal command above once more.
+- **macOS:** the app checks for updates on launch and installs new versions with your consent (toggle in Settings → Updates). To update manually, download the new `.dmg` and drag it into Applications to replace the old version — no Terminal command needed.
 - **Windows:** download the new `.msi` and run it — it upgrades the existing installation in place.
 
 ## Privacy during the beta
