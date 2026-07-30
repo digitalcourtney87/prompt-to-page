@@ -2,6 +2,8 @@
 
 **Build accessible GOV.UK Design System prototypes from plain English — no code, no cloud, no account.** A free, independent beta for **macOS and Windows** that runs an AI model entirely on your own device. After model setup, generating prototypes needs no internet connection; during the beta the app sends two limited usage events by default when online — see [Privacy during the beta](#privacy-during-the-beta).
 
+**▶ Watch it in action:** [prompttopage.xyz/demos](https://prompttopage.xyz/demos) — the full GOV.UK workflow, and the same journey on the U.S. Web Design System.
+
 > **Prompt to Page is an independent project.** It is not affiliated with, endorsed by, or associated with the Government Digital Service (GDS), the Crown, or the UK government. "GOV.UK" and the GOV.UK Design System are referenced for descriptive purposes only.
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
