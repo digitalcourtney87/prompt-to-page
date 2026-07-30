@@ -1,6 +1,6 @@
 # Prompt to Page
 
-**Build accessible GOV.UK Design System prototypes from plain English — no code, no internet connection, no account.** A free, independent beta for **macOS and Windows** that runs an AI model entirely on your own device.
+**Build accessible GOV.UK Design System prototypes from plain English — no code, no cloud, no account.** A free, independent beta for **macOS and Windows** that runs an AI model entirely on your own device. After model setup, generating prototypes needs no internet connection; during the beta the app sends two limited usage events by default when online — see [Privacy during the beta](#privacy-during-the-beta).
 
 > **Prompt to Page is an independent project.** It is not affiliated with, endorsed by, or associated with the Government Digital Service (GDS), the Crown, or the UK government. "GOV.UK" and the GOV.UK Design System are referenced for descriptive purposes only.
 
@@ -65,6 +65,18 @@ Get the latest build for your platform from the releases page:
 
 - **macOS:** download the new `.dmg`, drag it into Applications to replace the old version, and run the Terminal command above once more.
 - **Windows:** download the new `.msi` and run it — it upgrades the existing installation in place.
+
+## Privacy during the beta
+
+Prompt to Page sends `app_started` and `app_exited` events to Aptabase by default
+during the closed beta to measure aggregate use and improve the app. Aptabase
+derives a daily rotating identifier from connection data and says analytics may be
+stored for up to five years. Events never include prompts, generated pages, project
+content, model names, file paths or persistent install/account identifiers. Turn
+them off at any time in Settings → Privacy. Read the complete privacy notice at
+https://prompttopage.xyz/privacy.
+
+Your prompts, generated pages, and models stay on your device.
 
 ## Feedback
 
