@@ -8,7 +8,7 @@ This repository hosts the **downloads only**. By installing, you agree to the be
 
 ## What's new in 0.3.0
 
-**0.3.0 is the measured-quality release.** The model picker now shows measured quality for each design system a model has been evaluated on, NHS.UK is fully quality-evaluated, eight models respond faster with no measured quality loss, generation issues are surfaced in a per-page quality report, and you can edit the generated HTML directly. Also: **macOS builds are now signed and notarized by Apple — the first-launch Terminal step is gone.** See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+**0.3.0 is the measured-quality release.** The model picker now shows measured quality for each design system a model has been evaluated on, NHS.UK is fully quality-evaluated, eight models respond faster with no measured quality loss, generation issues are surfaced in a per-page quality report, and you can edit the generated HTML directly. Also: **macOS builds are now signed and notarized by Apple — the first-launch Terminal step is gone.** The **Windows build ships the same release**, and Windows in-app updates are live: on 0.2.x, use **Settings → Updates** to move to 0.3.0 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ Get the latest build for your platform from the releases page:
 ## Updating
 
 - **macOS:** the app checks for updates on launch and installs new versions with your consent (toggle in Settings → Updates). To update manually, download the new `.dmg` and drag it into Applications to replace the old version — no Terminal command needed.
-- **Windows:** download the new `.msi` and run it — it upgrades the existing installation in place.
+- **Windows:** the app checks for updates on launch and installs new versions with your consent (Settings → Updates); approve the Windows installer prompt when it appears. To update manually, download the new `.msi` and run it — it upgrades the existing installation in place.
 
 ## Privacy during the beta
 
