@@ -1,6 +1,6 @@
 # Prompt to Page
 
-**Build accessible GOV.UK Design System prototypes from plain English — no code, no cloud, no account.** A free, independent beta for **macOS and Windows** that runs an AI model entirely on your own device. After model setup, generating prototypes needs no internet connection; during the beta the app sends two limited usage events by default when online — see [Privacy during the beta](#privacy-during-the-beta).
+**Build accessible GOV.UK Design System prototypes from plain English — no code, no cloud, no account.** A free, independent beta for **macOS and Windows** that runs an AI model entirely on your own device. After model setup, generating prototypes needs no internet connection; the app can send two limited usage events, but only if you switch them on — see [Privacy during the beta](#privacy-during-the-beta).
 
 **▶ Watch it in action:** [prompttopage.xyz/demos](https://prompttopage.xyz/demos) — the full GOV.UK workflow, and the same journey on the U.S. Web Design System.
 
@@ -8,23 +8,23 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.3.0
+## What's new in 0.3.1
 
-**0.3.0 is the measured-quality release.** The model picker now shows measured quality for each design system a model has been evaluated on, NHS.UK is fully quality-evaluated, eight models respond faster with no measured quality loss, generation issues are surfaced in a per-page quality report, and you can edit the generated HTML directly. Also: **macOS builds are now signed and notarized by Apple — the first-launch Terminal step is gone.** The **Windows build ships the same release**, and Windows in-app updates are live: on 0.2.x, use **Settings → Updates** to move to 0.3.0 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+**Usage statistics are now off until you switch them on**, and the model catalogue gains **Qwen3-Coder 30B-A3B** — its first 4-of-5 rated model (32 GB RAM, shown only on machines that have it). For Windows, **8 GB PCs are no longer locked out of first-run setup**: Windows reports *addressable* rather than installed RAM, so a nominal 8 GB machine measured just under the 8 GB floor and was declared unsupported — installed memory is now read from SMBIOS, with a small margin on both RAM gates. The **Windows build ships the same release**; on 0.2.x or 0.3.0, use **Settings → Updates** to move to 0.3.1 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
+
+Hardware depends on the model you pick. **16 GB RAM is the recommended baseline, not a universal minimum** — the enabled models span **8–32 GB RAM** and about 1.1–18.6 GB per model file. The setup model picker shows what each model needs and hides the ones your machine can't run.
 
 ### macOS
 
 - A **Mac with Apple Silicon** (M1, M2, M3, or newer)
 - **macOS 14** (Sonoma) or later
-- **16 GB RAM** minimum
 - ~10 GB free disk space (an AI model downloads on first run)
 
 ### Windows
 
 - **Windows 10 or 11**, 64-bit
-- **16 GB RAM** minimum
 - ~10 GB free disk space (an AI model downloads on first run)
 - **Microsoft Edge WebView2 Runtime** — preinstalled on current Windows. If it's missing, install the free [Evergreen Runtime](https://developer.microsoft.com/microsoft-edge/webview2/).
 
@@ -63,13 +63,14 @@ Get the latest build for your platform from the releases page:
 
 ## Privacy during the beta
 
-Prompt to Page sends `app_started` and `app_exited` events to Aptabase by default
-during the closed beta to measure aggregate use and improve the app. Aptabase
-derives a daily rotating identifier from connection data and says analytics may be
-stored for up to five years. Events never include prompts, generated pages, project
-content, model names, file paths or persistent install/account identifiers. Turn
-them off at any time in Settings → Privacy. Read the complete privacy notice at
-https://prompttopage.xyz/privacy.
+Prompt to Page can send `app_started` and `app_exited` events to Aptabase during
+the closed beta to measure aggregate use and improve the app — but **only if you
+switch them on** in Settings → Privacy. They are off by default, and upgrading to
+0.3.1 turns them off for everyone. Aptabase derives a daily rotating identifier
+from connection data and says analytics may be stored for up to five years.
+Events never include prompts, generated pages, project content, model names, file
+paths or persistent install/account identifiers. Read the complete privacy notice
+at https://prompttopage.xyz/privacy.
 
 Your prompts, generated pages, and models stay on your device.
 
