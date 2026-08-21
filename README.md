@@ -8,13 +8,13 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.3.1
+## What's new in 0.3.2
 
-**Usage statistics are now off until you switch them on**, and the model catalogue gains **Qwen3-Coder 30B-A3B** — its first 4-of-5 rated model (32 GB RAM, shown only on machines that have it). For Windows, **8 GB PCs are no longer locked out of first-run setup**: Windows reports *addressable* rather than installed RAM, so a nominal 8 GB machine measured just under the 8 GB floor and was declared unsupported — installed memory is now read from SMBIOS, with a small margin on both RAM gates. The **Windows build ships the same release**; on 0.2.x or 0.3.0, use **Settings → Updates** to move to 0.3.1 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+The model catalogue gains **Qwen3.6 35B-A3B** as a 3-of-5 rated comparison entry in the 32 GB bracket — below Qwen3-Coder 30B-A3B's 4 of 5 at the same RAM tier, so the coder remains the recommended choice, but testers can now compare the two side by side (19 GB download, shown only on 32 GB machines). Under the hood, thinking-by-default models can now be launched with **reasoning switched off**, so a generation spends its whole page budget on markup instead of deliberation. The **Windows build ships the same release**; on 0.2.x or 0.3.x, use **Settings → Updates** to move to 0.3.2 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
-Hardware depends on the model you pick. **16 GB RAM is the recommended baseline, not a universal minimum** — the enabled models span **8–32 GB RAM** and about 1.1–18.6 GB per model file. The setup model picker shows what each model needs and hides the ones your machine can't run.
+Hardware depends on the model you pick. **16 GB RAM is the recommended baseline, not a universal minimum** — the enabled models span **8–32 GB RAM** and about 1.1–20.4 GB per model file. The setup model picker shows what each model needs and hides the ones your machine can't run.
 
 ### macOS
 
