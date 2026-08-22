@@ -8,9 +8,9 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.3.2
+## What's new in 0.4.0
 
-The model catalogue gains **Qwen3.6 35B-A3B** as a 3-of-5 rated comparison entry in the 32 GB bracket — below Qwen3-Coder 30B-A3B's 4 of 5 at the same RAM tier, so the coder remains the recommended choice, but testers can now compare the two side by side (19 GB download, shown only on 32 GB machines). Under the hood, thinking-by-default models can now be launched with **reasoning switched off**, so a generation spends its whole page budget on markup instead of deliberation. The **Windows build ships the same release**; on 0.2.x or 0.3.x, use **Settings → Updates** to move to 0.3.2 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+Three new design systems join the chooser, taking the app to **seven built-in base packs**. The **NSW Design System** (v3.26.0) and **Bootstrap Italia** (2.18.3) arrive as generally available packs — both with a de-branded shell (no government logos bundled) and the usual "generation quality not yet evaluated" caveat in Settings. The **Scottish Government Design System** (4.1.1) ships as a beta: seven built-in models were measured on a 20-case, five-seed Scottish Government battery, all at or above their GOV.UK rating, with no GOV.UK class leaking into any of the 700 generated pages; the model picker shows the measured rating per model. The **Windows build ships the same release**; on 0.2.x or 0.3.x, use **Settings → Updates** to move to 0.4.0 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
