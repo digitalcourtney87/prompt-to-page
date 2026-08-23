@@ -8,9 +8,9 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.4.0
+## What's new in 0.4.1
 
-Three new design systems join the chooser, taking the app to **seven built-in base packs**. The **NSW Design System** (v3.26.0) and **Bootstrap Italia** (2.18.3) arrive as generally available packs — both with a de-branded shell (no government logos bundled) and the usual "generation quality not yet evaluated" caveat in Settings. The **Scottish Government Design System** (4.1.1) ships as a beta: seven built-in models were measured on a 20-case, five-seed Scottish Government battery, all at or above their GOV.UK rating, with no GOV.UK class leaking into any of the 700 generated pages; the model picker shows the measured rating per model. The **Windows build ships the same release**; on 0.2.x or 0.3.x, use **Settings → Updates** to move to 0.4.0 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+A compliance maintenance release — no new features. The GOV.UK **header and footer reference entries** (whose markup carries the crown logotype and the OGL licence and Crown copyright marks) are removed from the component corpus bundled inside the app and from the generation prompt; the app's own unbranded shell already supplied page furniture, so generated pages look the same. A **content-aware brand-compliance check** now scans both the source tree and the packaged app for protected-mark signatures and embedded restricted fonts on every build, and the **export wording** on the README and website is corrected (the testable ZIP contains local, font-stripped frontend assets; Prototype Kit and Nunjucks hand-offs use your project's own dependencies). The **macOS build is available now**; the Windows 0.4.1 installer follows separately — until it is attached, Windows testers can use the [0.4.0 MSI](https://github.com/digitalcourtney87/prompt-to-page/releases/tag/v0.4.0). On any 0.2.x, 0.3.x or 0.4.0 install, use **Settings → Updates** to move to 0.4.1 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
