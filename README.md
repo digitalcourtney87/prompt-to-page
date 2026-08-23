@@ -8,13 +8,13 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.4.2
+## What's new in 0.4.3
 
-A fix release — no new features. On **macOS 14 and 15** the **MLX backend starts again**: 0.4.0 and 0.4.1 shipped an MLX runtime built for macOS 26, so on older Macs it failed with "Failed to load the default metallib" (the llama.cpp backend was not affected); the bundle is now built for the app's macOS 14 floor and the release gate checks it. **LM Studio connects without enabling CORS** — its local server has CORS off by default, which blocked the app's in-browser connection check; connection checks and model discovery for Ollama and LM Studio now run natively. Copied **troubleshooting reports now carry the app version**. On macOS and Windows, any 0.2.x, 0.3.x, 0.4.0 or 0.4.1 install can move to 0.4.2 in place via **Settings → Updates**. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+A reliability release — no new features. **A generated page is no longer thrown away when the quality check runs out of room**: the follow-up repair turn sends the whole page back to the model, so on dense design systems it could overflow the context window and replace the page you had just watched appear with a raw backend error — the unrepaired page is now kept instead. **Quitting no longer leaves the model server running** — on macOS, Cmd+Q used to leave it holding several gigabytes of memory and port 8080 until the next launch swept it up. **Local backends now work behind a corporate proxy**: connections to the app's own local servers (the built-in sidecar, MLX, Ollama and LM Studio) were being routed through `HTTP_PROXY`-style settings and refused, so running servers looked unreachable. **"Not running" is no longer reported when something else answers on the port** — connection checks now name the wrong-service case and the address to check. The **"Ready" chip no longer spills out of the status bar**. On macOS and Windows, any 0.2.x, 0.3.x or 0.4.x install can move to 0.4.3 in place via **Settings → Updates**. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
-Hardware depends on the model you pick. **16 GB RAM is the recommended baseline, not a universal minimum** — the enabled models span **8–32 GB RAM** and about 1.1–20.4 GB per model file. The setup model picker shows what each model needs and hides the ones your machine can't run.
+Hardware depends on the model you pick. **16 GB RAM is the recommended baseline, not a universal minimum** — the enabled models span **8–32 GB RAM** and about 1.1–20.4 GB per model file. The setup model picker shows what each model needs; models your machine can't run are shown greyed out under "More demanding models" rather than offered.
 
 ### macOS
 
