@@ -8,9 +8,9 @@
 
 This repository hosts the **downloads only**. By installing, you agree to the beta terms in [EULA.md](EULA.md).
 
-## What's new in 0.4.1
+## What's new in 0.4.2
 
-A compliance maintenance release — no new features. The GOV.UK **header and footer reference entries** (whose markup carries the crown logotype and the OGL licence and Crown copyright marks) are removed from the component corpus bundled inside the app and from the generation prompt; the app's own unbranded shell already supplied page furniture, so generated pages look the same. A **content-aware brand-compliance check** now scans both the source tree and the packaged app for protected-mark signatures and embedded restricted fonts on every build, and the **export wording** on the README and website is corrected (the testable ZIP contains local, font-stripped frontend assets; Prototype Kit and Nunjucks hand-offs use your project's own dependencies). The **Windows build ships the same release** as macOS. On any 0.2.x, 0.3.x or 0.4.0 install, use **Settings → Updates** to move to 0.4.1 in place — no re-download needed. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
+A fix release — no new features. On **macOS 14 and 15** the **MLX backend starts again**: 0.4.0 and 0.4.1 shipped an MLX runtime built for macOS 26, so on older Macs it failed with "Failed to load the default metallib" (the llama.cpp backend was not affected); the bundle is now built for the app's macOS 14 floor and the release gate checks it. **LM Studio connects without enabling CORS** — its local server has CORS off by default, which blocked the app's in-browser connection check; connection checks and model discovery for Ollama and LM Studio now run natively. Copied **troubleshooting reports now carry the app version**. On macOS, any 0.2.x, 0.3.x, 0.4.0 or 0.4.1 install can move to 0.4.2 in place via **Settings → Updates**; the Windows build will be attached to the release when ready. See the [release notes](https://github.com/digitalcourtney87/prompt-to-page/releases/latest) for the full list.
 
 ## Requirements
 
