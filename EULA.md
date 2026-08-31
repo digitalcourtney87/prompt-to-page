@@ -10,7 +10,7 @@
 
 # Prompt to Page — Beta End User License Agreement
 
-**Last updated: 29 July 2026**
+**Last updated: 31 August 2026**
 
 This End User License Agreement ("Agreement") is a legal agreement between you
 ("you" or "User") and **Courtney Allen** ("the Owner") for the **Prompt to Page**
@@ -77,14 +77,14 @@ The Software is designed to run locally. AI inference and your prototypes stay o
 your device, and the Software does not transmit your prompts or generated content
 to the Owner.
 
-During the closed beta, the Software sends two limited lifecycle events
-(`app_started` and `app_exited`) to Aptabase, the Owner's analytics processor, by
-default when your device is online, to measure aggregate use and improve the
-Software. These events never include prompts, generated pages, project content,
-model names, file paths, or persistent install or account identifiers. You can
-turn this off at any time in Settings → Privacy, and a previously saved opt-out is
-always respected. The complete and canonical description of this processing is the
-privacy notice at https://prompttopage.xyz/privacy.
+During the closed beta, the Software can send two limited lifecycle events
+(`app_started` and `app_exited`) to Aptabase, the Owner's analytics processor, to
+measure aggregate use and improve the Software — but only if you switch them on
+in Settings → Privacy. They are off by default, and upgrading to 0.3.1 turns them
+off for everyone. These events never include prompts, generated pages, project
+content, model names, file paths, or persistent install or account identifiers.
+The complete and canonical description of this processing is the privacy notice at
+https://prompttopage.xyz/privacy.
 
 ## 8. Term and termination
 
