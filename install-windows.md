@@ -7,7 +7,7 @@ A step-by-step guide to installing and updating **Prompt to Page** on Windows, p
 ## Requirements
 
 - **Windows 10 or 11**, 64-bit
-- **16 GB RAM** minimum
+- **16 GB RAM** is the recommended baseline, not a universal minimum — the enabled models span **8–32 GB RAM**
 - **~10 GB free disk space** — a local AI model downloads on first run
 - **Microsoft Edge WebView2 Runtime** — preinstalled on current Windows. If it's missing, install the free [Evergreen Runtime](https://developer.microsoft.com/microsoft-edge/webview2/).
 
@@ -17,7 +17,7 @@ Get the latest Windows installer from the releases page:
 
 ### → **[Download the latest release](https://github.com/digitalcourtney87/prompt-to-page/releases/latest)**
 
-Look for the file named `Prompt-to-Page_<version>_x64_en-US.msi` (for example, `Prompt-to-Page_0.2.5_x64_en-US.msi`).
+Look for the file named `Prompt-to-Page_<version>_x64_en-US.msi` (for example, `Prompt-to-Page_0.4.4_x64_en-US.msi`).
 
 ## 2. Install
 
