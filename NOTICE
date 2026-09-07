@@ -1,0 +1,212 @@
+Prompt to Page — Third-Party Notices
+====================================
+
+Prompt to Page bundles the following third-party material under its own licences.
+
+
+-----------------------------------------------------------------------
+GOV.UK Frontend v6.3.0 — MIT Licence
+-----------------------------------------------------------------------
+
+The MIT License (MIT)
+
+Copyright (C) 2017 Crown Copyright (Government Digital Service)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+-----------------------------------------------------------------------
+NHS.UK Frontend v10.5.2 — MIT Licence
+-----------------------------------------------------------------------
+
+NHS.UK Frontend — https://github.com/nhsuk/nhsuk-frontend — MIT Licence.
+
+The app bundles ONLY the compiled NHS.UK Frontend CSS and JS (public/nhsuk-frontend/,
+embedded into the app binary at build time), used by the optional NHS design-system
+pack. The Frutiger W01 @font-face rules and font-family references are removed
+(the typeface is licensed by NHS England for its own services only and is not
+redistributed; the stylesheet falls back to the Arial system stack) and the
+component's small functional UI icons are inlined as data URIs. The bundle
+contains NONE of the NHS logo, NHS blue-lozenge, or other NHS brand imagery
+(app icons, opengraph/apple-touch icons, favicons), which are NHS identity
+assets and are not redistributed.
+
+Prompt to Page is not affiliated with, or endorsed by, the NHS, NHS England,
+or the Government Digital Service.
+
+
+-----------------------------------------------------------------------
+MOJ Frontend v9.0.0 — MIT Licence
+-----------------------------------------------------------------------
+
+Ministry of Justice Frontend — https://github.com/ministryofjustice/moj-frontend
+— MIT Licence.
+
+The app bundles ONLY the compiled MOJ Frontend CSS and JS (public/moj-frontend/,
+embedded into the app binary at build time), used by the optional MOJ design-system
+overlay. The GDS Transport font-family references are removed (the typeface is
+licensed for gov.uk domains only and is not redistributed) and the component's
+small functional UI icons are inlined as data URIs. The bundle contains NONE of
+the Ministry of Justice or GOV.UK brand imagery (crest, crown, opengraph/touch
+icons), which is Crown copyright and is not redistributed.
+
+Prompt to Page is not affiliated with, or endorsed by, the Ministry of Justice
+or the Government Digital Service.
+
+
+-----------------------------------------------------------------------
+Scottish Government Design System v4.1.1 — MIT Licence
+-----------------------------------------------------------------------
+
+@scottish-government/design-system — https://github.com/scottish-government-design-system/design-system
+— The MIT License (MIT), Copyright (c) Crown Copyright 2019.
+
+The app bundles ONLY the compiled design-system CSS and JavaScript
+(public/scotgov/, embedded into the app binary at build time), an external
+initialiser module that calls window.DS.initAll(), and the package's functional
+SVG icons (the icons.stack.svg sprite and the document-type icons), used by the
+optional Scottish Government design-system pack.
+
+It contains NO Scottish Government identity assets. The Scottish Government logo
+and crest are not part of the npm package and are NOT redistributed: their use
+requires permission (scottishgovernmentlogo@gov.scot), and organisations that are
+not Scottish public bodies must use their own branding so that users do not
+mistake a prototype for a government service
+(https://designsystem.gov.scot/styles/branding). The shell the app renders
+carries only the prototype's service name, and src/brand-exclusion.test.ts
+forbids logo, crest, saltire and OGL assets under public/scotgov/.
+
+Bundled font: Roboto (Copyright 2011 The Roboto Project Authors), SIL Open Font
+License, Version 1.1. The design system specifies Roboto but does not ship it;
+the Scottish Government distributes the same family under the OFL
+(https://github.com/scottish-government-design-system/designsystem-assets). The
+latin and latin-ext subsets of the 300, 400, 400 italic and 700 faces are taken
+from @fontsource/roboto v5.3.0 (OFL-1.1) and inlined into
+public/scotgov/design-system.min.css as data: URIs; no font file is served.
+
+Reference markup and guidance text harvested from https://designsystem.gov.scot/
+(data/scotgov-reference-markup.json and the curated corpus under
+src-tauri/resources/packs/scotgov/) are reused under the Open Government
+Licence v3.0, which covers designsystem.gov.scot content except graphic assets
+and where otherwise stated (© Crown Copyright).
+
+
+-----------------------------------------------------------------------
+GOV.UK Design System documentation — Open Government Licence v3.0
+-----------------------------------------------------------------------
+
+The app's retrieval data (src-tauri/resources/govuk-components/components.json)
+includes component guidance text derived from the GOV.UK Design System
+documentation.
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+
+-----------------------------------------------------------------------
+Non-affiliation
+-----------------------------------------------------------------------
+
+Prompt to Page is an independent project by Courtney Allen. It is not affiliated
+with, endorsed by, or connected to the Government Digital Service, the Crown, or
+any UK government body. GOV.UK is a trademark of the Crown.
+
+
+-----------------------------------------------------------------------
+Excluded restricted assets
+-----------------------------------------------------------------------
+
+This software does NOT include the GDS Transport typeface or GOV.UK brand assets
+(crown, logotype, crest). Those remain restricted to official gov.uk services and
+are not licensed for redistribution.
+
+Likewise, the bundled NHS.UK and MOJ pack stylesheets do NOT include the Frutiger
+W01 typeface (licensed by NHS England for its own services only) or any NHS / MOJ
+brand imagery (NHS logo and blue-lozenge, Ministry of Justice crest). Those remain
+restricted to their respective official services and are not redistributed.
+
+The bundled NSW Design System stylesheet does NOT include the NSW Government
+Waratah logo, lockups, or State Arms. Those are registered trade marks /
+copyright of the State of New South Wales and may only be used with permission.
+
+
+-----------------------------------------------------------------------
+NSW Design System v3.26.0 — MIT Licence
+-----------------------------------------------------------------------
+
+NSW Design System — https://github.com/digitalnsw/nsw-design-system — MIT
+Licence (see the LICENSE file at tag v3.26.0; the npm `license` field on this
+version says ISC, which is metadata drift).
+
+The app bundles ONLY the compiled NSW Design System CSS and JavaScript
+(public/nsw-design-system/), used by the optional NSW design-system pack, with
+Public Sans (latin 400/400-italic/700) and Material Icons (latin 400) inlined
+as data: URIs so preview and export work offline. No font file ships under
+public/. Upstream getting-started Google Fonts / jsDelivr URLs are not
+redistributed.
+
+Public Sans is SIL Open Font License 1.1 (Copyright 2015 The Public Sans
+Project Authors). The Material Icons webfont as published by
+@fontsource/material-icons is SIL Open Font License 1.1 (Copyright Google Inc.).
+
+Prompt to Page is not affiliated with, endorsed by, or an official service of
+Digital NSW, the NSW Government, or the Department of Customer Service.
+
+
+-----------------------------------------------------------------------
+Digital Agency Design System (Japan) v20260825 — MIT Licence
+-----------------------------------------------------------------------
+
+デジタル庁デザインシステム (Digital Agency Design System, DADS) vanilla HTML
+example components —
+https://github.com/digital-go-jp/design-system-example-components-html — MIT
+Licence, Copyright (c) 2025 デジタル庁 (Digital Agency), pinned at tag
+v20260825 (commit 72a357d). The @digital-go-jp/design-tokens package (2.0.1)
+is likewise MIT.
+
+The app bundles ONLY compiled CSS, design-token values, and component
+JavaScript derived from that repository (public/dads/, embedded into the app
+binary at build time), used by the optional Digital Agency design-system pack.
+The page header and footer the app renders are a neutral Prompt to Page shell
+styled from the pinned token values — they are NOT official DADS furniture
+(the upstream ヘッダーコンテナ has no published HTML implementation), and the
+header carries no logo slot.
+
+Guidance text derived from the design-system documentation
+(https://design.digital.go.jp/dads/) is reused under the Public Data License
+(PDL) 1.0 with attribution and edit disclosure per the site's notices page;
+the bundled guidance is edited and restructured from the source material.
+出典：デジタル庁デザインシステムウェブサイト https://design.digital.go.jp/dads/
+
+It contains NO Digital Agency identity assets. The デジタル庁 logotype is
+excluded from PDL 1.0 and its use requires application to the agency; it is
+not redistributed and the shell provides no slot for it. Government crests and
+ministry emblems, the upstream repository's favicons, and the Digital Agency
+illustration and icon materials (イラストレーション・アイコン素材, which carry
+their own terms of use) are likewise not redistributed.
+
+No fonts are bundled: the design system's typography guidance specifies Noto
+Sans JP / Noto Sans Mono (SIL Open Font License 1.1) with a system-font
+fallback, and the pack relies on the system stack. The bundled dads.css
+appends the Japanese-capable system font names "Hiragino Sans", "Yu Gothic
+UI" and "Meiryo" to the upstream --font-family-sans stack — a Prompt to Page
+addition, so Japanese text renders on Windows and macOS system stacks.
+
+Prompt to Page is not affiliated with, endorsed by, or an official service of
+the Digital Agency (デジタル庁) or the Government of Japan.

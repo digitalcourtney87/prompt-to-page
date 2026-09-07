@@ -1,0 +1,55 @@
+Prompt to Page — Proprietary Licence
+
+Copyright (c) 2026 Courtney Allen. All rights reserved.
+
+Prompt to Page (the "Software") is proprietary software. It is NOT open source.
+This licence governs the free closed-beta distribution of the Software.
+
+1. Grant. Subject to your acceptance of the beta End User Licence Agreement
+   (see EULA.md), Courtney Allen ("the Licensor") grants you a personal,
+   non-exclusive, non-transferable, revocable licence to download, install and
+   use the compiled Software for evaluation and prototyping during the beta
+   period, at no charge.
+
+2. Restrictions. You may not, in whole or in part: (a) sell, rent, lease,
+   sublicense, distribute or make the Software available to any third party;
+   (b) copy the Software except as necessary to install and run it for your own
+   use; (c) reverse engineer, decompile or disassemble the Software, except to
+   the extent this restriction is prohibited by applicable law; (d) remove or
+   alter any proprietary notices; or (e) use the Software to build a competing
+   product.
+
+3. Ownership. The Software, including the application "chrome" (its own user
+   interface, branding and the "Prompt to Page" name and marks), is and remains
+   the property of the Licensor. No rights are granted except as expressly set
+   out here.
+
+4. Third-party and generated material. The Software generates HTML that uses the
+   GOV.UK Design System and GOV.UK Frontend, and it bundles third-party
+   components (including GOV.UK Frontend, llama.cpp and others) under their own
+   licences. Those licences continue to govern that material; see the NOTICE file
+   for the full third-party licence texts. The Software does not bundle or
+   redistribute the GDS Transport typeface or GOV.UK brand assets (crown,
+   logotype, crest), and generated prototypes use an unbranded header. GOV.UK and
+   the GOV.UK Design System are referenced descriptively; see the non-affiliation
+   notice below.
+
+5. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. This
+   is pre-release beta software.
+
+6. Limitation of liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR
+   SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL
+   DAMAGES, OR ANY LOSS OF DATA, ARISING OUT OF OR RELATING TO THE SOFTWARE.
+
+7. Term. This licence applies for the duration of the beta and may be revoked or
+   amended by the Licensor at any time.
+
+8. Governing law. This licence is governed by the laws of England and Wales.
+
+Non-affiliation: Prompt to Page is an independent project by Courtney Allen. It
+is not affiliated with, endorsed by, or connected to the Government Digital
+Service, the Crown, or any UK government body.
+
+Contact: courtney.rj.allen@gmail.com
