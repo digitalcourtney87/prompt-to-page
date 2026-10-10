@@ -210,3 +210,104 @@ addition, so Japanese text renders on Windows and macOS system stacks.
 
 Prompt to Page is not affiliated with, endorsed by, or an official service of
 the Digital Agency (デジタル庁) or the Government of Japan.
+
+
+-----------------------------------------------------------------------
+U.S. Web Design System v3.13.0 — CC0 1.0 Public Domain Dedication
+-----------------------------------------------------------------------
+
+U.S. Web Design System (USWDS) — https://github.com/uswds/uswds — as a work of
+the U.S. Government (General Services Administration), most of USWDS is
+dedicated to the worldwide public domain under the Creative Commons CC0 1.0
+Universal Public Domain Dedication
+(https://creativecommons.org/publicdomain/zero/1.0/).
+
+The app bundles ONLY the compiled USWDS CSS and JavaScript, including the
+upstream uswds-init script (public/uswds/, embedded into the app binary at
+build time), and the functional SVG icons the stylesheet and the usa-icon
+component reference (public/uswds/img/, including the sprite.svg icon sprite),
+used by the optional USWDS design-system pack. The demo hero photograph is
+removed.
+
+Bundled fonts: the regular and bold faces of Source Sans Pro, Merriweather and
+Roboto Mono are inlined into public/uswds/uswds.min.css as data: URIs (the
+italic and light variants are pruned); no font file is served.
+- Source Sans Pro: SIL Open Font License 1.1, Copyright 2010, 2012, 2014
+  Adobe Systems Incorporated, with Reserved Font Name 'Source', plus GSA
+  modifications released under CC0 1.0.
+- Merriweather: SIL Open Font License 1.1, Copyright Sorkin Type Co, with
+  Reserved Font Name 'Merriweather', plus GSA modifications (CC0 1.0).
+- Roboto Mono: Apache License 2.0
+  (https://www.apache.org/licenses/LICENSE-2.0).
+
+The functional SVG icons derive from Google Material Icons under the Apache
+License 2.0, combined with GSA modifications released under CC0 1.0.
+
+It contains NO U.S. Government identity assets. The U.S. flag graphics, the
+dot-gov and https banner icons, agency seals, and the "official website of the
+United States government" banner are NOT redistributed, so a generated
+prototype cannot impersonate a real U.S. government service.
+
+Prompt to Page is not affiliated with, endorsed by, or an official service of
+the U.S. Government, the General Services Administration, or any U.S. federal
+agency.
+
+
+-----------------------------------------------------------------------
+Bootstrap Italia v2.18.3 — BSD 3-Clause Licence
+-----------------------------------------------------------------------
+
+Bootstrap Italia — https://github.com/italia/bootstrap-italia — BSD 3-Clause
+Licence, Copyright (c) 2022, the respective contributors, as shown by the
+AUTHORS file.
+
+The app bundles ONLY the compiled Bootstrap Italia CSS and JavaScript bundle
+and the framework's SVG icon sprite (public/bootstrap-italia/, embedded into
+the app binary at build time), used by the optional Bootstrap Italia
+design-system pack. The JavaScript bundle includes third-party components
+under their own licences: Bootstrap 5.2.3, Popper.js, SplideJS, AnimeJS, Just
+Validate, Mini Masonry, Progressbar.js, UUID, Accessible Autocomplete
+(Government Digital Service) and a videojs-youtube-derived plugin (MIT);
+Design Tokens Italia (BSD 3-Clause); and Video.js (Apache License 2.0).
+
+Bundled fonts: Titillium Web (Copyright 2009-2011 Accademia di Belle Arti di
+Urbino and students of MA course of Visual design) and Lora (Copyright 2011
+The Lora Project Authors, with Reserved Font Name "Lora"), SIL Open Font
+License 1.1; Roboto Mono, Apache License 2.0; and the Video.js icon font, under
+the Video.js licence above. They are inlined into public/bootstrap-italia/bootstrap-italia.min.css as data:
+URIs; no font file is served.
+
+The full licence text and copyright notice for the framework, each bundled
+component and each font are in public/bootstrap-italia/NOTICE.txt.
+
+It contains NO Italian public-administration identity assets. The sprite's
+it-pa, it-flag, it-designers-italia and it-team-digitale symbols are removed
+when the pack is synced; the third-party social and platform icons upstream
+ships in the sprite are kept as published, and those marks belong to their
+owners. The neutral Prompt to Page shell excludes Italian public-administration
+emblems, flags, institutional logos and official-service claims, and
+src/brand-exclusion.test.ts guards both.
+
+Prompt to Page is not affiliated with, endorsed by, or an official service of
+the Italian Government or any Italian public administration.
+
+
+-----------------------------------------------------------------------
+Abstract Design System — Source Sans 3, SIL Open Font License 1.1
+-----------------------------------------------------------------------
+
+Abstract (public/abstract-design-system/) is Prompt to Page's own
+sector-neutral design system, part of Prompt to Page, an independent project
+by Courtney Allen. Its SVG symbols are original functional indicators drawn in
+this repository; they are not identity marks and carry no third-party artwork.
+
+Bundled font: Source Sans 3 (Copyright 2010-2024 Adobe, with Reserved Font
+Name 'Source'; Source is a trademark of Adobe in the United States and/or
+other countries), SIL Open Font License, Version 1.1. Unmodified Regular and
+Semibold WOFF2 files from https://github.com/adobe-fonts/source-sans are
+inlined into public/abstract-design-system/abstract.css as data: URIs; no font
+file is served. The full licence text is in
+abstract-design-system/src/assets/fonts/LICENSE.md.
+
+Abstract is not affiliated with, or endorsed by, any government, department
+or other institution.
